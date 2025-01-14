@@ -12,3 +12,11 @@ print(*values, sep= " -- ")
 
 for i in range(0, len(values)):
     print(values[i], end=f" [line: {str(i+1)}]\n")
+
+
+values = [  {  "name": "Alice", "age": 24, "city": "Toronto" },
+            {  "name": "Bob", "age": 30, "city": "Vancouver" },
+            {  "name": "Charlie", "age": 45, "city": "Montreal" }]
+
+# use the 'pprint' module to print complex data structures
+pprint.pprint(values, indent=4, width=40, underscore_numbers=True)
