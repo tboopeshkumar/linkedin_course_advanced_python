@@ -21,8 +21,10 @@ def test_oven(test_temp):
         oven.set_temp(test_temp)
     except InvalidTempError as e:
         print(e)
-    finally:
+    else:
         print("Temperature set to", oven.get_temp())
+    finally:
+        print("Current temperature setting is", oven.get_temp())
 
 oven = DigitalOven()
 test_oven(200)
